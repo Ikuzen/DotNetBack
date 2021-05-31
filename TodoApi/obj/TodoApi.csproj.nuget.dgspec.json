@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\DotNetBack\\myApp\\myApp.csproj": {}
+    "D:\\Workspace\\DotNetBack\\TodoApi\\TodoApi.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\DotNetBack\\myApp\\myApp.csproj": {
+    "D:\\Workspace\\DotNetBack\\TodoApi\\TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\DotNetBack\\myApp\\myApp.csproj",
-        "projectName": "myApp",
-        "projectPath": "D:\\Workspace\\DotNetBack\\myApp\\myApp.csproj",
+        "projectUniqueName": "D:\\Workspace\\DotNetBack\\TodoApi\\TodoApi.csproj",
+        "projectName": "TodoApi",
+        "projectPath": "D:\\Workspace\\DotNetBack\\TodoApi\\TodoApi.csproj",
         "packagesPath": "C:\\Users\\33652\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\DotNetBack\\myApp\\obj\\",
+        "outputPath": "D:\\Workspace\\DotNetBack\\TodoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\33652\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -50,6 +60,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
